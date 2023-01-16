@@ -1,0 +1,45 @@
+:root{
+    --color-blue: #4200FF;
+    --color-white: #FFFFFF;
+    --color-black: #000000;
+    --color-red: #CE4646;
+    --color-green: #4BA036;
+}
+
+body{
+    font-family: 'Inter', sans-serif;
+}
+
+button{
+    width: 142px;
+    height: 41px;
+    /* padding: 10px 0; */
+    border-radius: 0;
+    border: 1px solid;
+    font-weight: 700;
+    font-size: 18px;
+}
+
+.button--white{
+    border-color: var(--color-blue);
+    color: var(--color-blue);
+    background-color: var(--color-white);
+}
+
+.button--blue{
+    border-color: var(--color-blue);
+    color: var(--color-white);
+    background-color: var(--color-blue);
+}
+
+.button--green{
+    border-color: var(--color-green);
+    color: var(--color-white);
+    background-color: var(--color-green);
+}
+
+.button--red{
+    border-color: var(--color-red);
+    color: var(--color-red);
+    background-color: var(--color-white);
+}

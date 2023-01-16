@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Fonte -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+    <!-- Css -->
+    <link rel="stylesheet" href="../styles/reset.css">
+    <link rel="stylesheet" href="../styles/globalStyle.css">
+    <link rel="stylesheet" href="../styles/header.css">
+    <link rel="stylesheet" href="../styles/admin.css">
+    <!-- Fontawasome icon -->
+    <script src="https://kit.fontawesome.com/f87046282e.js" crossorigin="anonymous"></script>
+    <!-- Toastify -->
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+
+    <title>Dashboard ADM</title>
+</head>
+
+<body>
+    <header class="header">
+        <div class="header__logo">
+            <img src="../img/Ellipse 1.svg" alt="simbolo" class="header__symbol">
+            <img src="../img/Kenzie Empresas.svg" alt="Kenzie empresas" class="header__name">
+        </div>
+        <span class="header__buttonCollapse">
+            <img class="icon" src="../img/Vector barra.svg" alt="abrir menu">
+        </span>
+        <section class="header__menu">
+            <button class="header__button button--white">Logout</button>
+        </section>
+    </header>
+
+    <main>
+
+        <section class="departments">
+        <div class="departments__nav">
+            <h2 class="departments__title">Departamentos</h2>
+            <select class="departments__select" name="" id="">
+                <option value="Selecionar Empresa">Selecionar Empresa</option>
+            </select>
+            <button class="departments__button button--blue">+ Criar</button>
+        </div>
+        <ul class="departments__list"></ul>
+        </section>
+
+        <dialog class="modal-create-department">
+            <span class="clone-button">X</span>
+            <h2>Criar Departamento</h2>
+            <form action="">
+                <input type="text" name="name" placeholder="Nome do departamento">
+                <input type="text" name="description" placeholder="Descrição">
+                <select name="company_uuid" id="select-company">
+                    <option value="">Selecionar empresa</option>
+                </select>
+                <button class="button--blue">Criar o departamento</button>
+            </form>
+        </dialog>
+
+        <dialog class="modal-view-department"></dialog>
+
+        <dialog class="modal-edit-department">
+            <div class="modal-edit-department__container">
+                <span class="modal-edit-department-close-button">X</span>
+                <form class="modal-edit-department__form">
+                    <h2>Editar Departamento</h2>
+                    <input type="text" name="description">
+                    <button type="submit" class="button--blue">Salvar alterações</button>
+                </form>
+            </div>
+        </dialog>
+
+        <dialog class="modal-edit-delete">
+            <div class="modal-edit-delete__container">
+                <span>X</span>
+                <h2></h2>
+                <button class="button--green">Confirmar</button>
+            </div>
+        </dialog>
+
+      <section class="registered-users">
+        <h2 class="registered-users__title">Usuários cadastrados</h2>
+        <ul class="registered-users__list">
+        </ul>
+        <dialog class="modal-edit-user">
+            <div class="modal-edit-user__container">
+                <span>X</span>
+                <h2>Editar Usuário</h2>
+                <select class="kindOfWord">
+                    <option>Selecionar modalidade de trabalho</option>
+                    <option value="presencial">presencial</option>
+                    <option value="hibrido">hibrido</option>
+                    <option value="home office">home office</option>
+                </select>
+                <select name="" class="experience">
+                    <option>Selecionar nível profissional</option>
+                    <option value="estágio">estágio</option>
+                    <option value="júnior">júnior</option>
+                    <option value="pleno">pleno</option>
+                    <option value="sênior">sênior</option>
+                </select>
+                <button class="button--blue">Editar</button>
+            </div>
+        </dialog>
+        <dialog class="modal-delete-user">
+            <div class="modal-delete-user__container">
+                <span>X</span>
+                <h2></h2>
+                <button class="button--green">Deletar</button>
+            </div>
+        </dialog>
+      </section>
+    </main>
+
+    <!-- Toastify -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+    <!-- Js -->
+    <script src="../scripts/header.js"></script>
+    <script type="module" src="../scripts/admin.js"></script>
+</body>
+</html>

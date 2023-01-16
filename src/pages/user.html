@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <!-- Fonte -->
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+     <!-- Css -->
+     <link rel="stylesheet" href="../styles/reset.css">
+     <link rel="stylesheet" href="../styles/globalStyle.css">
+     <link rel="stylesheet" href="../styles/header.css">
+     <link rel="stylesheet" href="../styles/user.css">
+     <!-- Fontawasome icon -->
+     <script src="https://kit.fontawesome.com/f87046282e.js" crossorigin="anonymous"></script>
+     <!-- Toastify -->
+     <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+
+    <title>Dasboar Usuário</title>
+</head>
+<body>
+    <header class="header">
+        <div class="header__logo">
+            <img src="../img/Ellipse 1.svg" alt="simbolo" class="header__symbol">
+            <img src="../img/Kenzie Empresas.svg" alt="Kenzie empresas" class="header__name">
+        </div>
+        <span class="header__buttonCollapse">
+            <img class="icon" src="../img/Vector barra.svg" alt="abrir menu">
+        </span>
+        <section class="header__menu">
+            <button class="header__button button--white">Logout</button>
+        </section>
+    </header>
+
+    <main>
+        <section class="data-user">
+        </section>
+        <dialog class="modal-edit-user">
+            <form class="modal-edit-user__container">
+                <span>X</span>
+                <h2>Editar Perfil</h2>
+                <input type="text" class="name" placeholder="Seu nome">
+                <input type="text" class="email" placeholder="Seu e-mail">
+                <input type="text" class="password" placeholder="Sua senha">
+                <button class="button--blue">Editar perfil</button>
+            </form>
+        </dialog>
+
+        <section class="frame-user">
+            <div class="header-company">
+            </div>
+            <ul class="list-coworkers">
+            </ul>
+        </section>
+    </main>
+
+     <!-- Toastify -->
+     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+     <!-- Js -->
+     <script src="../scripts/header.js"></script>
+    <script type="module" src="../scripts/user.js"></script>
+</body>
+</html>

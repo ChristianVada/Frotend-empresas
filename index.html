@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Fonte -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+    <!-- Css -->
+    <link rel="stylesheet" href="./src/styles/reset.css">
+    <link rel="stylesheet" href="./src/styles/globalStyle.css">
+    <link rel="stylesheet" href="./src/styles/header.css">
+    <link rel="stylesheet" href="./src/styles/index.css">
+    <!-- Fontawasome icon -->
+    <script src="https://kit.fontawesome.com/f87046282e.js" crossorigin="anonymous"></script>
+    <title>Projeto frontend empresas</title>
+</head>
+
+<body>
+    <header class="header">
+        <div class="header__logo">
+            <img src="./src/img/Ellipse 1.svg" alt="simbolo" class="header__symbol">
+            <img src="./src/img/Kenzie Empresas.svg" alt="Kenzie empresas" class="header__name">
+        </div>
+        <span class="header__buttonCollapse">
+            <img class="icon" src="./src/img/Vector barra.svg" alt="abrir menu">
+        </span>
+        <section class="header__menu">
+            <button class="header__login-button button--white">Login</button>
+            <button class="header__register-button button--blue">Cadastro</button>
+        </section>
+    </header>
+    
+    <main class="main">
+        <img class="main__home-img" src="./src/img/foto login.svg" alt="pessoa trabalhando">
+        <div class="main__section">
+            <div class="main__select-sector-container">
+                <p class="selectSector__text">Selecionar Setor</p>
+                <span class="selectSector__icon"><img src="./src/img/Arrow 2.svg" alt="abrir seletor de setor"></span>
+            </div>
+            <ul class="filter">
+                <li class="filter__item">Todos</li>
+                <li class="filter__item">Alimenticio</li>
+                <li class="filter__item">Varejo</li>
+                <li class="filter__item">Textil</li>
+                <li class="filter__item">Manufatura</li>
+                <li class="filter__item">Aeroespacial</li>
+                <li class="filter__item">Automotiva</li>
+                <li class="filter__item">TI</li>
+                <li class="filter__item">Atacado</li>
+            </ul>
+            <ul class="company">
+                <!-- esses li vão ser dinamico -->
+            </ul>
+        </div>
+    </main>
+    <!-- Js -->
+    <script type="module" src="./src/scripts/index.js"></script>
+</body>
+</html>
+

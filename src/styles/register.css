@@ -1,0 +1,57 @@
+body{
+    background-image: url("../img/backgroundCadastroFull.svg");
+    background-position: top;
+    background-repeat: no-repeat;
+}
+
+.input-register{
+    display: flex;
+    flex-direction: column;
+    background-color: var(--color-white);
+    opacity: 93%;
+
+    height: 520px;
+    margin-top: 28px;
+}
+
+.input-register__title{
+    font-weight: 700;
+    font-size: 32px;
+
+    margin: 40px 20px 25px 20px;
+}
+
+.input-register__list{
+    display: flex;
+    flex-direction: column;
+    gap: 13px;
+}
+
+.input-register__list > input{
+    height: 52px;
+    margin: 0 20px;
+    border: 1px solid;
+    border-color: rgba(0, 0, 0, 0.2);
+    padding: 0 20px;
+}
+
+#input-register__professional-level{
+    height: 52px;
+    margin: 0 20px;
+    border-color: rgba(0, 0, 0, 0.2);
+    padding: 0 20px;
+}
+
+.input-register__list > button{
+    height: 52px;
+    width: inherit;
+    margin: 0 20px;
+}
+
+@media screen and (min-width:1024px){
+    .input-register{
+        width: 506px;
+        margin: 0 auto;
+        margin-top: 143px;
+    }
+}

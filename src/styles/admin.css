@@ -1,0 +1,386 @@
+.departments{
+   margin: 100px auto;
+   max-width: 1211px;
+}
+
+.departments__nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 15px 0;
+}
+
+.departments__title{
+    font-size: 30px;
+    font-weight: 700;
+}
+
+.departments__select{
+    width: 280px;
+    height: 32px;
+    border-radius: 15px;
+    padding-left: 15px;
+    font-size: 20px;
+}
+
+.departments__list{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 28px 92px;
+
+    overflow-y: auto;
+    height: 385px;
+    padding: 34px 56px;
+    background-color: #F8F8F8;
+}
+
+.departments__iten{
+    border-bottom: 1px solid blue;
+    background-color: var(--color-white);
+    width: 490px;
+    height: 195px;
+    padding: 18px 25px;
+
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.departments__iten > h3{
+    font-weight: 700;
+    font-size: 20px;
+}
+
+.departments__iten > p{
+    font-size: 18px;
+}
+
+.departments__icon{
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.departments__icon > span{
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    border: 1px solid rgba(0, 0, 0, 0.1)
+}
+
+.registered-users{
+    margin: 0 auto;
+    margin-bottom: 40px;
+    max-width: 1211px;
+}
+
+.registered-users__title{
+    font-size: 30px;
+    font-weight: 700;
+    text-align: center;
+    padding: 15px 0;
+}
+
+.registered-users__list{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 28px 92px;
+    overflow-y: auto;
+    height: 385px;
+    padding: 34px 56px;
+    background-color: #F8F8F8;
+}
+
+.registered-users__iten{
+    background-color: var(--color-white);
+    width: 490px;
+    height: 195px;
+    padding: 18px 25px;
+    border-bottom: 1px solid var(--color-blue);
+
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.registered-users__iten > h3{
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.registered-users__iten > p{
+    font-size: 18px;
+}
+
+.registered-user__icon{
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.registered-user__icon > span{
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.modal-create-department{
+    width: 506px;
+    height: 402px;
+    box-sizing: border-box;
+
+    font-size: 20px;
+}
+
+.modal-create-department > span{
+    position: absolute;
+    right: 20px;
+    top: 20px;
+}
+
+.modal-create-department > h2{
+    font-size: 36px;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.modal-create-department > form{
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+    align-items: center;
+}
+
+.modal-create-department > form > input{
+    box-sizing: border-box;
+
+    width: 422px;
+    height: 52px;
+    padding: 0 20px;
+}
+
+.modal-create-department > form > select{
+    width: 422px;
+    height: 52px;
+    padding: 0 20px;
+}
+
+.modal-create-department > form > select > option{
+    width: 422px;
+    height: 52px;
+    padding: 0 20px;
+
+}
+
+.modal-create-department > form > button{
+    width: 422px;
+    height: 48px;
+}
+
+.modal-view-department{
+    width: 857px;
+    height: 600px;
+}
+
+.modal-view-department > span{
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
+
+.modal-view-department > h2{
+    margin: 20px 0;
+    font-size: 36px;
+    font-weight: 700;
+}
+
+.modal-view-department__container{
+    display: flex;
+    justify-content: space-between;
+
+    margin-bottom: 94px;
+}
+
+.modal-view-department__info > h3{
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.modal-view-department__info > p{
+    font-size: 18px;
+}
+
+.modal-view-department__select-info{
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+}
+
+.modal-view-department__select-info > select{
+    width: 422px;
+    height: 52px;
+    padding: 0 15px;
+}
+
+.modal-view-department__select-info > button{
+    align-self: flex-end;
+}
+
+.modal-view-department__list{
+    width: 814px;
+    height: 290px;
+    background-color: #F8F8F8;
+    padding: 43px 33px;
+    margin: 0 auto;
+    overflow-x: auto;
+    
+    display: flex;
+    gap: 31px;
+}
+
+.modal-view-department__iten{
+    min-width: 306px;
+    height: 196px;
+    padding: 18px 29px;
+    border-bottom: 1px solid var(--color-blue);
+    background-color: var(--color-white);
+
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.modal-view-department__iten > h3{
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.modal-view-department__iten > p{
+    font-size: 18px;
+}
+
+.modal-view-department__iten > button{
+    align-self: center;
+}
+
+.modal-edit-department__container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+
+    width: 506px;
+    height: 330px;
+}
+
+.modal-edit-department__container > span{
+    align-self: flex-end;
+}
+
+.modal-edit-department__form{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.modal-edit-department__form > h2{
+    font-size: 36px;
+    font-weight: 700;
+}
+
+.modal-edit-department__form > input{
+    width: 422px;
+    height: 113px;
+    padding: 17px;
+    box-sizing: border-box;
+    border: 1px solid rgba(0, 0, 0, 0.3);
+}
+
+.modal-edit-department__form > button{
+    width: 422px;
+    height: 48px;
+}
+
+
+.modal-edit-delete__container{
+    display: flex;
+    flex-direction: column;
+    gap: 38px;
+    align-items: center;
+
+    width: 733px;
+    height: 342px;
+}
+
+.modal-edit-delete__container > span{
+    align-self: flex-end;
+}
+
+.modal-edit-delete__container > h2{
+    font-size: 28px;
+    font-weight: 700;
+
+    padding: 30px 40px;
+}
+
+.modal-edit-delete__container > button{
+    width: 422px;
+}
+
+
+.modal-edit-user__container{
+    width: 506px;
+    height: 342px;
+    padding-left: 43px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.modal-edit-user__container > button{
+    width: 422px;
+}
+
+
+.modal-edit-user__container > span{
+    align-self: flex-end;
+}
+
+.modal-edit-user__container > h2{
+    font-size: 36px;
+    font-weight: 700;
+}
+
+.modal-edit-user__container > select{
+    box-sizing: border-box;
+    padding: 17px;
+    width: 422px;
+}
+
+.modal-delete-user__container{
+    width: 600px;
+    height: 270px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.modal-delete-user__container > span{
+    align-self: flex-end;
+}
+
+.modal-delete-user__container > h2{
+    font-size: 28px;
+    font-weight: 700px;
+    padding: 30px;
+    text-align: center;
+}
+
+.modal-delete-user__container > button{
+    width: 422px;
+}

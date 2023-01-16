@@ -1,0 +1,106 @@
+.data-user{
+    width: 1000px;
+    height: 121px;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    margin: 30px auto;
+    padding: 20px 30px;
+
+    position: relative;
+
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.data-user > h2{
+    font-size: 30px;
+    font-weight: 700;
+}
+
+.data-user__container{
+    display: flex;
+    gap: 150px;
+}
+
+.data-user > span{
+    position: absolute;
+    top: 40px;
+    right: 40px;
+
+    width: 27px;
+    height: 27px;
+    text-align: center;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.frame-user{
+    width: 1000px;
+    height: 467px;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    margin: 0 auto;
+}
+
+.modal-edit-user__container{
+    width: 506px;
+    height: 421px;
+    padding: 40px;
+
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+}
+
+.modal-edit-user__container > span{
+    align-self: flex-end;
+}
+
+.modal-edit-user__container > h2{
+    font-weight: 700;
+    font-size: 40px;
+}
+
+.modal-edit-user__container > input{
+    width: 422px;
+    height: 52px;
+    padding: 14px;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+.modal-edit-user__container > button{
+    width: 422px;
+    height: 52px;
+}
+
+.header-company{
+    width: 1000px;
+    height: 76px;
+    background-color: var(--color-blue);
+    color: white;
+    font-size: 32px;
+    font-weight: 700;
+    text-align: center;
+    padding-top: 10px;
+}
+
+.list-coworkers{
+    width: 1000px;
+    height: 380px;
+    background-color: #F8F8F8;
+    padding: 50px;
+
+    display: flex;
+    flex-wrap: wrap;
+    gap: 13px 54px;
+}
+
+.iten-coworkes{
+    width: 260px;
+    height: 76px;
+    border: 1px solid var(--color-blue);
+    padding: 12px 23px;
+    background-color: white;
+}
+
+.nameCoworkes{
+    font-weight: 700;
+}

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Fonte -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+    <!-- Css -->
+    <link rel="stylesheet" href="../styles/reset.css">
+    <link rel="stylesheet" href="../styles/globalStyle.css">
+    <link rel="stylesheet" href="../styles/header.css">
+    <link rel="stylesheet" href="../styles/login.css">
+    <!-- Fontawasome icon -->
+    <script src="https://kit.fontawesome.com/f87046282e.js" crossorigin="anonymous"></script>
+    <!-- Toastify -->
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+    <title>Entre</title>
+</head>
+
+<body>
+    <header class="header">
+        <div class="header__logo">
+            <img src="../img/Ellipse 1.svg" alt="simbolo" class="header__symbol">
+            <img src="../img/Kenzie Empresas.svg" alt="Kenzie empresas" class="header__name">
+        </div>
+        <span class="header__buttonCollapse">
+            <img class="icon" src="../img/Vector barra.svg" alt="abrir menu">
+        </span>
+        <section class="header__menu">
+            <button class="header__home-button button--white">Home</button>
+            <button class="header__register-button button--blue">Cadastro</button>
+        </section>
+    </header>
+
+    <main>
+        <form class="input-login">
+            <h2 class="input-login__title">Login</h2>
+            <p>Preencha os campos para realizar login</p>
+            <div class="input-login__list">
+                <input type="text" placeholder="Seu email" name="email">
+                <input type="text" placeholder="Sua senha" name="password">
+                <button class="input-login__button-login button--blue">Login</button>
+                <p>ou</p>
+                <button type="submit" class="input-login__button-register button--white">Cadastre-se</button>
+            </div>
+        </form>
+    </main>
+
+    <!-- Toastify -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+    <!-- Js -->
+    <script src="../scripts/header.js"></script>
+    <script type="module" src="../scripts/login.js"></script>
+</body>
+</html>
