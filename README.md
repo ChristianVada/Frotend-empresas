@@ -37,4 +37,4 @@ Criar uma interface web para consumir a API e exibir as informações na tela, p
 
 Documentação da API: https://kenzie-academy-brasil-developers.github.io/m2-empresas-doc/;
 
-Link da aplicação: https://christianvada.github.io/projeto-m2-frotend-empresas/;
+Aplicação deve rodar no live server!
